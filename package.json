@@ -1,10 +1,14 @@
 {
   "name": "api-imoveis-clara",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "npx playwright install chromium"
   },
   "dependencies": {
-    "playwright": "^1.41.0"
+    "express": "^4.19.2",
+    "playwright": "^1.41.2"
   }
 }
+
